@@ -10,6 +10,7 @@ def find_pairs(arr, k):
                 pairs.add((arr[i],arr[j]))
     return pairs
 
+# solution 2: O(n)
 def find_pairs_optimized(arr, k):
     seen = set()
     pairs = set()
