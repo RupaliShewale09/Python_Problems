@@ -27,4 +27,4 @@ def contiguous_arr(arr):
  
 
 arr = list(map(int, input("Enter space separated values: ").split()))
-print("Count of subarrays:", contiguous_arr(arr))
+print("Longest Contiguous increasing subarrays:", contiguous_arr(arr))
