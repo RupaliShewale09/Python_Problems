@@ -1,6 +1,6 @@
 # Count vowels and consonants
 
-def count_Vowels_conso(s):
+def count_vowels_conso(s):
     s = s.replace(" ","").lower()
 
     vowels = 0 
@@ -15,4 +15,5 @@ def count_Vowels_conso(s):
     return vowels, conso
 
 s = input("Enter a string:")
-print("The count of vowels and consonents : ", count_Vowels_conso(s))
+v, c = count_vowels_conso(s)
+print(f"Vowels: {v}, Consonants: {c}")
