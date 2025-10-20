@@ -1,7 +1,10 @@
 #  Reverse each word in a string
+# Enter a sentence: Hello World     
+# Reversed string (words): World Hello
 
-def reverse_words(str):
-    str1 = str.split()
+#solution 1: using 2 pointer
+def reverse_words(s):
+    str1 = s.split()
 
     left = 0
     right = len(str1)-1
@@ -13,5 +16,17 @@ def reverse_words(str):
 
     return ' '.join(str1)
 
+#solution 2 : using another string
+def reverse_words2(s):
+    reversed_w = ""
+    s = s.split()
+
+    for word in s:
+        reversed_w = word + " " +reversed_w
+
+    return reversed_w
+
+
 str = input("Enter a sentence: ")
 print("Reversed string (words):", reverse_words(str))
+print("Reversed string (words):", reverse_words2(str))
